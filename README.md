@@ -1,6 +1,6 @@
-## Simple Date Range Filter for Laravel Nova 4
+## Simple Date Range Filter for Laravel Nova 4/5
 
-A filter for Nova 4 that displays a Date Range Picker instead of a single date picker using [Daterangepicker library](https://www.daterangepicker.com/)
+A filter for Nova that displays a Date Range Picker instead of a single date picker using [Daterangepicker library](https://www.daterangepicker.com/)
 
 ### Install
 

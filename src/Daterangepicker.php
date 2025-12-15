@@ -18,8 +18,6 @@ class Daterangepicker extends Filter
     public function __construct(
         private string | array $column,
         private string $default = Helper::TODAY,
-        private string $orderByColumn = 'id',
-        private string $orderByDir = 'asc',
     ) {
         //Often date range components use as default date the past dates
         $this->maxDate = Carbon::today();
@@ -46,13 +44,11 @@ class Daterangepicker extends Filter
         if ($start && $end) {
             if (is_string($this->column)) {
                 return $query
-                    ->whereBetween($this->column, [$start, $end])
-                    ->orderBy($this->orderByColumn, $this->orderByDir);
+                    ->whereBetween($this->column, [$start, $end]);
             } elseif (is_array($this->column) && count($this->column) == 2) {
                 return $query
                     ->where($this->column[0], '>=', $start)
-                    ->where($this->column[1], '<=', $end)
-                    ->orderBy($this->orderByColumn, $this->orderByDir);
+                    ->where($this->column[1], '<=', $end);
             } else {
                 throw new Exception('Date range picker: column name value must be an string or array with two string items.');
             }
