@@ -1,6 +1,6 @@
 <?php
 
-namespace Rpj\Daterangepicker;
+namespace Pjhile\Daterangepicker;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;

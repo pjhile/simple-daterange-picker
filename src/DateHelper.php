@@ -1,6 +1,6 @@
 <?php
 
-namespace Rpj\Daterangepicker;
+namespace Pjhile\Daterangepicker;
 
 use Exception;
 use Illuminate\Support\Carbon;

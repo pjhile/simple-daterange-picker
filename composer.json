@@ -1,6 +1,6 @@
 {
-    "name": "rpj/daterangepicker",
-    "description": "A simple Date Range filter for Laravel Nova 4.",
+    "name": "pjhile/daterangepicker",
+    "description": "A simple Date Range filter for Laravel Nova 4/5 that respects Nova sorting. Forked from the original rpj/daterangepicker package.",
     "keywords": [
         "laravel",
         "nova",
@@ -10,7 +10,7 @@
     ],
     "authors": [
         {
-            "name": "Roger Rodrigo Paco Jaldin"
+            "name": "PJ Hile"
         }
     ],
     "license": "MIT",
@@ -20,13 +20,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Rpj\\Daterangepicker\\": "src/"
+            "Pjhile\\Daterangepicker\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Rpj\\Daterangepicker\\FilterServiceProvider"
+                "Pjhile\\Daterangepicker\\FilterServiceProvider"
             ]
         }
     },
